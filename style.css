@@ -40,4 +40,8 @@ input {
     width: 99%;
     height: 10vh;
     background: #6C67A9;
+    text-align: right;
+    font-size: 24px;
+    padding-right: 20px;
+    color: #fff;
 }

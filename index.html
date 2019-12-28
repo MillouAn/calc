@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="calc">
-        <input type="text" name="field" id='input' value="0">
+        <input type="text" name="field" id='input' value="">
         <div class="but">1</div>
         <div class="but">2</div>
         <div class="but">3</div>
@@ -25,5 +25,27 @@
         <div class="but">=</div>
         <div class="but">/</div>
     </div>
+    <script>
+        let buttons = document.getElementsByClassName("but");
+        let inp = document.getElementById("input");
+        for(let i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function() {
+                    inp.value += this.innerHTML;
+                }
+        }
+        calc("45+86")
+        function calc(s){
+            for(let i = 0; i < s.length; i++){
+                if(isFinite(s[i])){
+                    //1 соединение цифр в число
+
+                }else{
+                    //1 записать знак
+                    //2 после начинать запись с нового числа
+
+                }
+            }
+        }
+    </script>
 </body>
 </html>
